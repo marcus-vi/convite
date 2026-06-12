@@ -46,7 +46,6 @@ export default function Invite() {
       {/* REFLEXO LUA */}
       <div className="absolute right-0 top-48 h-40 w-full bg-gradient-to-b from-cyan-400/10 to-transparent" />
 
-      {/* LUZES */}
       <div className="absolute top-0 left-0 w-full">
         <div className="h-[4px] w-full bg-black/40" />
 

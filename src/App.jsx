@@ -9,7 +9,6 @@ export default function App() {
 
   const audioRef = useRef(null);
 
-  // 🎵 música global
   useEffect(() => {
     const audio = new Audio("/The Walters -- I Love You So.mp3");
     audio.loop = true;
