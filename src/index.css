@@ -6,9 +6,12 @@ body {
 }
 
 .parallax-bg {
-  background-image: url("/bg.jpg");
+  /* Use an image for the CSS background. Videos cannot be used with background-image.
+     If you want a video background, add a <video> element in the HTML instead. */
+  background-image: url("/Design sem nome.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   transform: scale(1.1);
   animation: parallaxMove 10s ease-in-out infinite alternate;
 }
@@ -22,12 +25,13 @@ body {
   }
 }
 
+/* raízes leves (única definição consolidada) */
 .root-bg {
-  background-image: url("/roots.svg"); /* ou uma textura */
+  background-image: url("/roots.svg");
   background-size: cover;
   background-position: center;
-  opacity: 0.15;
-  animation: rootMove 12s ease-in-out infinite alternate;
+  opacity: 0.08;
+  animation: rootMove 20s ease-in-out infinite alternate;
 }
 
 @keyframes rootMove {
@@ -35,7 +39,7 @@ body {
     transform: translateY(0px) scale(1);
   }
   100% {
-    transform: translateY(-20px) scale(1.05);
+    transform: translateY(-12px) scale(1.03);
   }
 }
 
@@ -63,23 +67,6 @@ body {
   }
 }
 
-/* raízes leves */
-.root-bg {
-  background-image: url("/roots.svg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.08;
-  animation: rootMove 18s ease-in-out infinite alternate;
-}
-
-@keyframes rootMove {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  100% {
-    transform: translateY(-10px) scale(1.03);
-  }
-}
 
 .flower-float {
   position: absolute;
@@ -111,20 +98,4 @@ body {
   }
 }
 
-/* 🌿 fundo leve */
-.root-bg {
-  background-image: url("/roots.svg");
-  background-size: cover;
-  background-position: center;
-  opacity: 0.08;
-  animation: rootMove 20s ease-in-out infinite alternate;
-}
-
-@keyframes rootMove {
-  0% {
-    transform: translateY(0px) scale(1);
-  }
-  100% {
-    transform: translateY(-12px) scale(1.03);
-  }
-}
+/* 🌿 fundo leve - consolidado acima */
